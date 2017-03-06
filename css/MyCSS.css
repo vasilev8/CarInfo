@@ -1,109 +1,20 @@
-h1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
+h1 {margin-top: 0px;margin-bottom: 0px;}
+body{ background-color:black;}
 /* The dots/bullets/indicators */
-.dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #717171;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #bbb;
-}
+.dot { height: 13px; width: 13px; margin: 0 2px; background-color: #717171;border-radius: 50%;display: inline-block; transition: background-color 0.6s ease;}
+.active {background-color: #bbb;}
 /* Number text (1/3 etc) */
-.numbertext {
-  color: #ff9900;
-  font-size: 15px;
-  position:absolute;
-  top:0;
-  left: 10px;
-}
+.numbertext {color: #ff9900; font-size: 15px; position:absolute; top:0; left: 10px;}
+a{ color:#4D4D4D; text-decoration:none;}
+a:hover{ color:#ff9700; text-decoration:none;}
+.vdots { text-align:center; height: 20px; width: 100%; position: absolute; bottom: 0; left: 0;}
 
-a{ 
-	color:#4D4D4D; 
-	text-decoration:none
-}
-a:hover{
-	color:#ff9700; 
-	text-decoration:none
-}
+/*Footer*/
+.social{ width: 100%; text-align:center;}
+.social p{ color:white;}
+.copyright { width: 100%; color: #a7a7a7; font-size: 10px; font-family: "Arial"; text-align: center; margin-top:10px;}
 
-.vdots {
-	text-align:center;
-	height: 20px;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-
-.contacts-box {
-	width: 33.33%;
-	display: inline-block;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border: 1px solid #4d4d4d;
-	position: absolute;
-	float: left;
-	padding: 13px 20px;	
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	overflow:auto;
-}
-
-.cb-email,
-	.cb-phone {
-	font-size: 16px;
-	color: #fff;
-	margin-bottom: 10px;
-	font-family: 'Jura', sans-serif;
-	padding-left: 30px;
-}
-			
-	.cb-phone {
-	background: url("../images/icon-contacts-phone.png") 0 50% no-repeat;
-}
-	.cb-email {
-	margin-bottom: 0;
-	background: url("../images/icon-contacts-mail.png") 0 50% no-repeat;
-}
-	.cb-email span,
-		.cb-phone span {
-		color: #a0a0a0;
-		font-size: 10px;
-		font-family: "Arial";
-		display: block;
-}
-
-.social{
-	width: 100%;
-	text-align:center;
-	
-}
-.social p{
-	color:white;
-}
-
-.copyright {
-	width: 100%;
-	color: #a7a7a7;
-	font-size: 10px;
-	font-family: "Arial";
-	text-align: center;
-	margin-top:10px;
-}
-
-body{
-	background-color:black;
-}
+/*Navigation*/
 .top{ width:100%; height:80px; background:#000000}
 .top .wrapper{ width:1000px; margin:0 auto}
 .top-logo{ float:left}
@@ -115,70 +26,32 @@ body{
 .top-total{ float:right; background:#ff9700; width:160px; height:34px; text-align:center; line-height:34px; color:#FFF}
 .top-total span{ font-family:Georgia; font-size:17px; color:#FFE400; padding:0 5px}
 
+/*Main content-left*/
 .main{ width:1250px; margin:0 auto; height:auto; overflow:hidden}
-.main-list{ float:left; width:800px}
-.main-list .tnav{ width:800px; height:33px;}
-.main-list .tnav dt{ float:left; height:32px; text-align:left;  padding:0 2px; color:#ff9700; font-weight:800; font-family:Arial}
-.main-list .tnav dd a{ float:left; height:30px; text-align:left;  margin-left:19px; padding:0 2px}
-.main-list .tnav dd a:hover{ height:32px; border-bottom:2px solid #ff9700; color:#ff9700; padding:0 2px}
-.main-list .t1{ width:800px; height:40px; line-height:40px; border-bottom:2px solid #EBEBEB; margin-top:40px}
-.main-list .t1-l{ float:left; background:url(http://www.carlogos.org/img/icon1.png) no-repeat left 15px; padding-left:30px; font-size:18px; font-weight:bold}
-.main-list .t2{ width:610px; height:40px; line-height:40px; background:url(http://www.carlogos.org/img/icon1.png) no-repeat left 15px; border-bottom:2px solid #EBEBEB; margin-top:40px; font-size:18px; padding-left:30px; font-weight:bold}
-.main-list .logobox{ width:840px; height:auto; overflow:hidden; border-top:2px solid #ff9700; border-bottom:2px solid #ff9700;}
-.main-list .logobox dt{ float:left; width:122px; height:120px; margin:20px 12px 0 0; margin-left:30px}
-.main-list .logobox dt img{ width:122px; height:99px}
-.main-list .logobox dt a{ 
-	font-size:20px; color:#ff9700;}
-.main-list .pagination {
-    display: inline-block;
-	float: right;
-	position: relative;
-	left: -37%;
-}
+.main-left{ float:left; width:800px}
+.main-left .tnav{ width:800px; height:33px;}
+.main-left .tnav dt{ float:left; height:32px; text-align:left;  padding:0 2px; color:#ff9700; font-weight:800; font-family:Arial}
+.main-left .tnav dd a{ float:left; height:30px; text-align:left;  margin-left:19px; padding:0 2px}
+.main-left .tnav dd a:hover{ height:32px; border-bottom:2px solid #ff9700; color:#ff9700; padding:0 2px}
+.main-left .logobox{ width:840px; height:auto; overflow:hidden; border-top:2px solid #ff9700; border-bottom:2px solid #ff9700;}
+.main-left .logobox dt{ float:left; width:122px; height:120px; margin:20px 12px 0 0; margin-left:30px}
+.main-left .logobox dt img{ width:122px; height:99px}
+.main-left .logobox dt a{ font-size:20px; color:#ff9700;}
+.main-left .pagination { display: inline-block; float: right; position: relative; left: -37%;}
+.main-left .pagination a { color: black; background-color: #FFF; border-radius: 5px; float: left; padding: 5px 10px; margin:2px; text-decoration: none;}
+.main-left .pagination a.active { background-color: #ff9700; color: white; border-radius: 5px;}
+.main-left .pagination a:hover:not(.active) { background-color: #ff9700; border-radius: 5px;}
 
-.main-list .pagination a {
-    color: black;
-	background-color: #FFF;
-	border-radius: 5px;
-    float: left;
-    padding: 5px 10px;
-	margin:2px;
-    text-decoration: none;
-}
+/*Main content-right*/
+.main-right{ width:300px; float:right}
+.main-right .box1{ height:auto; overflow:hidden; padding-top:14px}
+.main-right .box1 dt{ height:22x; line-height:26px; border-bottom:1px solid #F6F6F6; padding-left:10px}
+.main-right .box1 .s01{ font-size:17px; font-family:Georgia; font-style:italic; padding:0 6px; color:#333; width:25px; display:inline-block}
+.main-right .box1 .s02{ float:right; font-weight:normal; color:#7a7a7a; font-style:normal; padding-right:5px}
+.main-right .sign{ font-size:10px; color:#888; text-align:right; height:15px; line-height:15px; margin-top:6px}
+.main-right .t3{ width:auto; height:30px; line-height:30px; font-weight:800; padding-left:13px; margin-top:30px; background:#F0F0F0}
+.main-right .box1 .image1{float:right; border-radius:5px;}
 
-.main-list .pagination a.active {
-    background-color: #ff9700;
-    color: white;
-    border-radius: 5px;
-}
-.main-list .pagination a:hover:not(.active) {
-    background-color: #ff9700;
-    border-radius: 5px;
-}
-.main-list .pnav{ clear:both; width:100%; margin:30px 0 10px 0; font-weight:bold; padding:12px 0; background:#FFF; text-align:center; border-bottom:2px solid #EBEBEB}
-.main-list .pnav a{ line-height:20px; font-size:18px}
-.main-list .loc{ background:url(http://www.carlogos.org/img/Home.jpg) no-repeat left 2px; height:15px; padding-left:20px; line-height:15px; color:#888; font-size:10px; padding-bottom:20px}
-.main-list .loc a{ color:#7A7A7A; font-size:11px}
-.main-list .loc strong{ font-weight:normal}
-
-.main-r{ width:300px; float:right}
-.main-r .box1{ height:auto; overflow:hidden; padding-top:14px}
-.main-r .box1 dt{ height:22x; line-height:26px; border-bottom:1px solid #F6F6F6; padding-left:10px}
-.main-r .box1 .s01{ font-size:17px; font-family:Georgia; font-style:italic; padding:0 6px; color:#333; width:25px; display:inline-block}
-.main-r .box1 .s02{ float:right; font-weight:normal; color:#7a7a7a; font-style:normal; padding-right:5px}
-.main-r .sign{ font-size:10px; color:#888; text-align:right; height:15px; line-height:15px; margin-top:6px}
-.main-r .t3{ width:auto; height:30px; line-height:30px; font-weight:800; padding-left:13px; margin-top:30px; background:#F0F0F0}
-.main-r .tags{ font-weight:bold; margin-top:25px}
-.main-r .tags div{ float:left; margin:5px; padding:4px; border-radius:5px; background:#FFF; filter:progid:DXImageTransform.Microsoft.Shadow(color=#CCCCCC,direction=120,strength=3); -moz-box-shadow: 2px 2px 6px #CCC; -webkit-box-shadow: 2px 2px 6px #CCC; box-shadow:2px 2px 6px #CCC}
-.main-r .ft26{ font-size:26px}
-.main-r .ft18{ font-size:18px}
-.main-r .ft16{ font-size:16px}
-.main-r .ft14{ font-size:14px}
-.main-r .ft12{ font-size:12px}
-.main-r .ftno{ font-weight:normal}
-.main-r .tags a{ color:#7A7A7A}
-.main-r .tags a:hover{ color:#C00}
-.main-r .box1 .image1{float:right; border-radius:5px;}
 @media only screen and (max-width:1000px)
 {
 	.top{ width:100%; height:88px; background:#000000}
@@ -193,38 +66,23 @@ body{
 	.top-total{ display:none}
 	
 	.main{ width:auto; padding:0 8px}
-	.main-list{ width:100%; overflow:hidden}
-	.main-list .tnav{ width:auto; height:13px;}
-	.main-list .tnav dt{ float:left; height:20px; text-align:left;  padding:0 2px; color:#ff9700; font-weight:800; font-family:Arial}
-	.main-list .tnav dd a{ float:left; height:25px; text-align:left;  margin:1px; padding:0 2px}
-	.main-list .tnav dd a:hover{ height:22px; border-bottom:2px solid #ff9700; color:#ff9700; }
-	.main-list .t1{ width:auto; margin-top:20px}
-	.main-list .t2{ width:auto}
-	.main-list .t3{ width:auto; border-bottom:2px solid #EBEBEB; margin-top:30px; font-size:17px; padding-left:30px}
-	.main-list h1{ padding-top:0}
-	.main-list .logobox{ width:auto; height:auto; overflow:hidden; display: inline-block; text-align: left; border-top:2px solid #ff9700; border-bottom:2px solid #ff9700;}
-	.main-list .logobox dt{ width:83px; height:88px; margin:25px 10px 0 5px; float: left; padding-left:10px;}
-	.main-list .logobox dt a{color:#ff9700; font-size:14px ;position:center;}
-	.main-list .logobox dt img{ width:83px; height:67px}
-	.main-list .content img{ margin:0 auto; display:block}
-	.main-list .pagination a {
-    color: black;
-	background-color: #FFF;
-	border-radius: 5px;
-    float: left;
-    padding: 5px 10px;
-	margin:2px;
-    text-decoration: none;
-}
-
-.main-list .pagination a.active {
-    background-color: #ff9700;
-    color: white;
-    border-radius: 5px;
-}
-.main-list .pagination a:hover:not(.active) {
-    background-color: #ff9700;
-    border-radius: 5px;
-}
-.main-r{ width:100%}
+	.main-left{ width:100%; overflow:hidden}
+	.main-left .tnav{ width:auto; height:13px;}
+	.main-left .tnav dt{ float:left; height:20px; text-align:left;  padding:0 2px; color:#ff9700; font-weight:800; font-family:Arial}
+	.main-left .tnav dd a{ float:left; height:25px; text-align:left;  margin:1px; padding:0 2px}
+	.main-left .tnav dd a:hover{ height:22px; border-bottom:2px solid #ff9700; color:#ff9700; }
+	.main-left .t1{ width:auto; margin-top:20px}
+	.main-left .t2{ width:auto}
+	.main-left .t3{ width:auto; border-bottom:2px solid #EBEBEB; margin-top:30px; font-size:17px; padding-left:30px}
+	.main-left h1{ padding-top:0}
+	.main-left .logobox{ width:auto; height:auto; overflow:hidden; display: inline-block; text-align: left; border-top:2px solid #ff9700; border-bottom:2px solid #ff9700;}
+	.main-left .logobox dt{ width:83px; height:88px; margin:25px 10px 0 5px; float: left; padding-left:10px;}
+	.main-left .logobox dt a{color:#ff9700; font-size:14px ;position:center;}
+	.main-left .logobox dt img{ width:83px; height:67px}
+	.main-left .content img{ margin:0 auto; display:block}
+	.main-left .pagination a { color: black; background-color: #FFF; border-radius: 5px; float: left; padding: 5px 10px; margin:2px; text-decoration: none;}
+	.main-left .pagination a.active { background-color: #ff9700; color: white; border-radius: 5px;}
+	.main-left .pagination a:hover:not(.active) { background-color: #ff9700; border-radius: 5px;}
+	
+	.main-right{ width:100%}
 }
