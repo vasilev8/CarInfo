@@ -4,19 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CarInfo</title>
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="css/MyCSS.css">
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" type="text/css" href="css/MyCSS.css">
 </head>
 <body>
 <!--Navigation-->
-<div class="top w3-border-bottom w3-border-orange">
+<div class="top">
 	<div class="wrapper">
     	<div class="top-logo"><h1><a href="Homepage.html"></a></h1></div>
     	<div class="top-menu">
             <a href="Homepage.html">Начало</a>
-			<a href="#">Статии</a>
-            <a href="All.html">Всички марки</a>
+			<a href="Articles.html">Статии</a>
+            <a href="All.html" class="active">Всички марки</a>
 			<a href="#">Wallpapers</a>
         </div>
     	<div class="top-total">Марки:<span>888</span></div>
@@ -29,16 +29,15 @@
 	
         <dl class="tnav">
             <dt>Категория :</dt>
-            <dd><a href="#">Всички</a></dd>
-            <dd><a href="#">Известни</a></dd>
-            <dd><a href="#">GER</a></dd>
-            <dd><a href="#">USA</a></dd>
-            <dd><a href="#">UK</a></dd>
-            <dd><a href="#">ITA</a></dd>
-            <dd><a href="#">FRA</a></dd>
-            <dd><a href="#">CHN</a></dd>
-            <dd><a href="#">JPN</a></dd>
-            <dd><a href="#">Други</a></dd>
+            <dd><a href="All.html">Всички</a></dd>
+            <dd><a href="Popular.html">Известни</a></dd>
+            <dd><a href="GER-brands.html">GER</a></dd>
+            <dd><a href="USA-brands.html">USA</a></dd>
+            <dd><a href="UK-brands.html">UK</a></dd>
+            <dd><a href="ITA-brands.html">ITA</a></dd>
+            <dd><a href="FRA-brands.html">FRA</a></dd>
+            <dd><a href="JPN-brands.html">JPN</a></dd>
+            <dd><a href="Other.html">Други</a></dd>
         </dl>
 		
         <dl class="logobox">
@@ -82,8 +81,6 @@
 			<a href="#" title="Mitsubishi">Mitsubishi</a></dt>
 			<dt><a href="#"><img src="img/Smart-logo.jpg" alt="Smart logo"></a>
 			<a href="#" title="Smart">Smart</a></dt>
-			<dt><a href="#"><img src="img/MAN-logo.jpg" alt="MAN logo"></a>
-			<a href="#" title="MAN">MAN</a></dt>
 			<dt><a href="#"><img src="img/Corvette-logo.jpg" alt="Corvette logo"></a>
 			<a href="#" title="Corvette">Corvette</a></dt>
 			<dt><a href="#"><img src="img/BAC-logo.jpg" alt="BAC logo"></a>
@@ -94,8 +91,6 @@
 			<a href="#" title="Nissan GT-R">GT-R</a></dt>
 			<dt><a href="#"><img src="img/Alpina-logo.jpg" alt="Alpina logo"></a>
 			<a href="#" title="Alpina">Alpina</a></dt>
-			<dt><a href="#"><img src="img/Iveco-logo.jpg" alt="Iveco logo"></a>
-			<a href="#" title="Iveco">Iveco</a></dt>
 			<dt><a href="#"><img src="img/UAZ-logo.jpg" alt="UAZ logo"></a>
 			<a href="#" title="UAZ (УАЗ)">UAZ</a></dt>
 			<dt><a href="#"><img src="img/Mustang-logo.jpg" alt="Mustang logo"></a>
@@ -114,16 +109,16 @@
 	<div class="main-right">
         <div class="t3">Топ 10 Автомобилни компании</div>
         <dl class="box1">
-        	<dt><span class="s01">1.</span><a href="#"><img class="image1" src="toyota.jpg">Toyota</a></dt>
-        	<dt><span class="s01">2.</span><a href="#">Volkswagen</a></dt>
-        	<dt><span class="s01">3.</span><a href="#">Mercedes-Benz</a></dt>
-        	<dt><span class="s01">4.</span><a href="#">BMW</a></dt>
-        	<dt><span class="s01">5.</span><a href="#">Honda</a></dt>
-        	<dt><span class="s01">6.</span><a href="#">General Motors</a></dt>
-        	<dt><span class="s01">7.</span><a href="#">Ford</a></dt>
-        	<dt><span class="s01">8.</span><a href="#">Nissan</a></dt>
-        	<dt><span class="s01">9.</span><a href="#">Hyundai</a></dt>
-        	<dt><span class="s01">10.</span><a href="#">Audi</a></dt>
+        	<dt><span class="s01">1.</span><a href="#"><img class="image1" src="img/toyota.jpg">Toyota</a></dt>
+        	<dt><span class="s01">2.</span><a href="#"><img class="image1" src="img/vw.jpg">Volkswagen</a></dt>
+        	<dt><span class="s01">3.</span><a href="#"><img class="image1" src="img/mercedes.jpg">Mercedes-Benz</a></dt>
+        	<dt><span class="s01">4.</span><a href="#"><img class="image1" src="img/bmw.jpg">BMW</a></dt>
+        	<dt><span class="s01">5.</span><a href="#"><img class="image1" src="img/audi.jpg">Audi</a></dt>
+        	<dt><span class="s01">6.</span><a href="#"><img class="image1" src="img/gm.jpg">General Motors</a></dt>
+        	<dt><span class="s01">7.</span><a href="#"><img class="image1" src="img/ford.jpg">Ford</a></dt>
+        	<dt><span class="s01">8.</span><a href="#"><img class="image1" src="img/nissan.jpg">Nissan</a></dt>
+        	<dt><span class="s01">9.</span><a href="#"><img class="image1" src="img/hyundai.jpg">Hyundai</a></dt>
+        	<dt><span class="s01">10.</span><a href="#"><img class="image1" src="img/honda.jpg">Honda</a></dt>
         </dl>
 		
        <div class="t3">Топ 10 Мотоциклетни компании</div>
