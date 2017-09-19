@@ -9,6 +9,7 @@ body{ background-color:black;}
 a{ color:#4D4D4D; text-decoration:none;}
 a:hover{ color:#ff9700; text-decoration:none;}
 .vdots { text-align:center; height: 20px; width: 100%; position: absolute; bottom: 0; left: 0;}
+.descript{font-size:20px;padding:10px;text-align: center;}
 
 /*Footer*/
 .social{ width: 100%; text-align:center;}
@@ -35,7 +36,7 @@ a:hover{ color:#ff9700; text-decoration:none;}
 .main-left .tnav dt{ float:left; height:32px; text-align:left;  padding:0 2px; color:#ff9700; font-weight:800; font-family:Arial}
 .main-left .tnav dd a{ float:left; height:30px; text-align:left;  margin-left:19px; padding:0 2px}
 .main-left .tnav dd a:hover{ height:32px; border-bottom:2px solid #ff9700; color:#ff9700; padding:0 2px}
-.main-left .logobox{ width:840px; height:auto; overflow:hidden; border-top:2px solid #ff9700; border-bottom:2px solid #ff9700;}
+.main-left .logobox{ width:840px; height:auto; overflow:hidden; border-top:2px solid #ff9700; border-bottom:2px solid #ff9700;padding-bottom: 15px}
 .main-left .logobox dt{ float:left; width:122px; height:120px; margin:20px 12px 0 0; margin-left:30px}
 .main-left .logobox dt img{ width:122px; height:99px}
 .main-left .logobox dt a{ font-size:20px; color:#ff9700;}
@@ -69,18 +70,34 @@ a:hover{ color:#ff9700; text-decoration:none;}
 .main-left .read-more:hover{color: #ff9700;}
 .main-left .article-description {font-size: 12px; color: #4d4d4d; font-family: "Arial"; padding-bottom: 5px;overflow:hidden;padding-right:10px;}
 .main-left .clear { border-radius: 2px; border-top: 1px groove #ff9700;padding-bottom:10px;padding-top:10px;width:800px;margin-left:20px;}
+.main-left .wallpapers{ width:100%; overflow:hidden; list-style-type: none; margin-top: 20px; padding: 0;}
+.main-left .wallpapers li { text-align:center; line-height:40px; overflow:auto; display:inline-block; padding:5px;}
+.main-left .wallpapers li img { width:250px; height:auto; z-index:-1;transition: transform 0.2s; -webkit-transition: -webkit-transform 0.2s; -moz-transition: -moz-transform 0.2s; -o-transition: -o-transform 0.2s;}
+.main-left .wallpapers li img:hover { transform: scale(1.1); -ms-transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1);}
+.main-left .wallpapers li span { float:left; display:inline-block; width:auto; text-align:center; z-index:9999; margin-top:-35px; background-color: rgba(0,0,0,0.4); font-size:16px; font-weight:bold}
+.main-left .wallpapers li a { color:#BBB}
+.main-left .wallpapers li a:hover { color:#ff9700}
+
+
 /*Main content-right*/
 .main-right{ width:225px; float:right;}
 .main-right .box1{ height:auto; overflow:hidden; padding-top:14px}
+.main-right .box1 a{color:#BBB;}
 .main-right .box1 dt{ height:22x; line-height:26px; border-bottom:1px solid #F6F6F6; padding-left:10px}
-.main-right .box1 .s01{ font-size:17px; font-family:Georgia; font-style:italic; padding:0 6px; color:#333; width:25px; display:inline-block}
+.main-right .box1 .s01{ font-size:17px; font-family:Georgia; font-style:italic; padding:0 6px; color:#ff9700; width:25px; display:inline-block}
 .main-right .box1 .s02{ float:right; font-weight:normal; color:#7a7a7a; font-style:normal; padding-right:5px}
 .main-right .sign{ font-size:10px; color:#888; text-align:right; height:15px; line-height:15px; margin-top:6px}
 .main-right .t3{ width:auto; height:30px; line-height:30px; font-weight:800; padding-left:13px; margin-top:30px; background:#F0F0F0}
 .main-right .box1 .image1{float:right; border-radius:5px; padding-top: 2px;}
+.main-right .wallcat { width:225px; }
+.main-right .wallcat a { background-color:#F0F0F0; color:black; display:block; padding: 8px;}
+.main-right .wallcat a:hover {background-color:#ff9700}
+.main-right .wallcat a.active {color:black; background-color:#ff9700}
 
 @media only screen and (max-width:1000px)
 {
+	.descript{font-size:12px}
+	
 	.top{ width:100%; height:105px; background:#000000;border-bottom: 2px solid #ff9800!important;}
 	.top .wrapper{ width:100%; height:88px; margin: 0 auto;}
 	.top-logo{ width:100%; height:58px;}
@@ -127,6 +144,7 @@ a:hover{ color:#ff9700; text-decoration:none;}
 	.main-left .read-more:hover{color: #ff9700;}
 	.main-left .article-description {font-size: 12px; color: #4d4d4d; font-family: "Arial"; padding-bottom: 5px;overflow:hidden;padding-right:10px;}
 	.main-left .clear { border-radius: 2px; border-top: 1px groove #ff9700; padding-bottom: 10px; padding-top: 10px; display: inline-block; margin-left:0px;}
+	.main-left .wallpapers li img { width:100%; height:auto; z-index:-1;}
 	
 	.main-right{ width:100%}
 }
