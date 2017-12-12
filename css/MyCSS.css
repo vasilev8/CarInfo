@@ -26,8 +26,8 @@ a:hover{ color:#ff9700; text-decoration:none;}
 .top-menu a{ float:left; display:block; line-height:56px; padding:0 15px; text-align:center; font-size:17px; color:#FFF; font-weight:bold;}
 .top-menu a:hover{ background-color: #ff9700; color: black;}
 .top-menu a.active{background-color: #ff9700; color: black;}
-.top-total{ float:right; background:#ff9700; width:160px; height:35px; text-align:center; line-height:35px; font-size:17px; color:#FFF; font-weight:bold;}
-a:hover{color:black;}
+.logreg{ float:right; background:#ff9700; width:160px; height:35px; text-align:center; line-height:35px; font-size:17px; color:#FFF; font-weight:bold;}
+a:hover{color: black;}
 
 /*Main content-left*/
 .main{ width:1100px; margin:0 auto; height:auto; overflow:hidden}
@@ -111,11 +111,12 @@ a:hover{color:black;}
 	.top-logo a { width:166px; height:80px; background:url(logo.jpg) no-repeat left -12px; background-size:160px 80px; margin-left:5px; margin:0 auto}
 	.top-menu{  margin-left: 0px;padding-top: 0; width: 100%; text-align: center; background:#000000; overflow:auto;}
 	.top-menu a { line-height:20px; padding:0; font-size:14px; color:#FFEAEA; font-weight:bold; margin-left:0px }
-	.top-menu #home{margin-right:8px; border:none; background:url(home3.png) ;height: 45px; width: 40px; background-repeat: no-repeat; text-indent: -9999px;}
-	.top-menu #article { text-indent: -9999px; background:url(article.png); background-repeat: no-repeat; height: 45px; width: 40px;}
+	.top-menu #home{ background:url(home3.png) ;height: 45px; width: 40px; background-repeat: no-repeat; text-indent: -9999px;}
+	.top-menu #article {margin-right: 2px; text-indent: -9999px; background:url(article.png); background-repeat: no-repeat; height: 45px; width: 40px;}
+	.top-menu #wallpapers {margin-right: 2px; text-indent: -9999px; background:url(wallpapers1.png); background-repeat: no-repeat; height: 45px; width: 40px; }
+	.top-menu #allbrands {margin-right: 4px; text-indent: -9999px; background:url(allbrands.png); background-repeat: no-repeat; height: 45px; width: 40px; }
 	.top-menu .logos{width:41.66%}
-	.top-menu a:hover{ border:none}
-	.top-total{ display:none}
+	.logreg{ float: right;}
 	
 	.main{ width:auto; padding:0 8px}
 	.main-left{ width:100%; overflow:hidden}
