@@ -18,19 +18,22 @@ a:hover{ color:#ff9700; text-decoration:none;}
 
 /*Navigation*/
 .top{ width:100%; height:80px; background:#000000;border-bottom: 1px solid #ff9800!important;}
-.top .wrapper{ width:1000px; margin:0 auto}
+.top .wrapper{ width:1100px; margin:0 auto}
 .top-logo{ float:left}
 .top-logo a{ width:166px; height:75px; background:url(logo.jpg) no-repeat left top; display:block; background-size:166px 80px}
-.top-menu{/* float:left; */padding-top:24px;margin-left:85px;}
+.top-menu{ padding-top:24px;margin-left:85px; height:auto;}
 .top-menu .home{ width:120px}
 .top-menu a{float:left;display:block;line-height:56px;padding:0 15px;text-align:center;font-size:17px;color:#FFF;font-weight:bold;}
 .top-menu a:hover{ background-color: #ff9700; color: black;}
 .top-menu a.active{background-color: #ff9700; color: black;}
-.login #reg{background:#ff9700;width:170px;height:56px;text-align:center;line-height:56px;font-size:17px;font-weight:bold;}
-a:hover{color: #ff9700;}
+.login { margin-top:10px;}
+.login input {width: 12%; height: 30px; margin-bottom:5px; border: none ; background-color: #FFF; font-size: 12px; color: black; line-height: 10px;}
+.login button { width:8%; height: 29px; border: none; font-size: 14px; margin: 0 auto; cursor: pointer; background-color: #FFF; }
+.login button:hover{ background-color:#ff9700; color:black }
+.signuplink{display:none;}
 
 /*Main content-left*/
-.main{ width:1100px; margin:0 auto; height:auto; overflow:hidden}
+.main{ width:1100px; margin:0 auto; height:auto; overflow:hidden }
 .main h2 {color: #FFF; text-align: center;}
 .main-left{ float:left; width:800px}
 .main-left .tnav{ width:800px; height:33px;}
@@ -103,6 +106,11 @@ a:hover{color: #ff9700;}
 .main-right .show {display:block;}
 .main-right .category {padding-top: 5px; padding-bottom: 5px; border-bottom: 1px solid black}
 .main-right .category:hover {background-color: white;}
+.main-right2 { width:298px; float:right; height:360px}
+.main-right2 .login-form { width: 225px; padding-top: 20px; margin-bottom:10px ; margin: 0 auto}
+.main-right2 .login-form input{ width: 100%; height: 40px; padding: 0px 5%; margin-bottom:5px; main-right: 10px; border: none ; background-color: #FFF; font-size: 16px; color: black; line-height: 40px;}
+.main-right2 .login-form button { display: block; width:30%; height: 40px; border: none; font-size: 16px; margin: 0 auto; cursor: pointer; background-color: #FFF; }
+.main-right2 .login-form button:hover { background-color:#ff9700; color:black }
 
 
 @media only screen and (max-width:1000px)
@@ -111,16 +119,18 @@ a:hover{color: #ff9700;}
 	
 	.top { width:100%; height:105px; background:#000000;border-bottom: 2px solid #ff9800!important;}
 	.top .wrapper { width:100%; height:88px; margin: 0 auto;}
-	.top-logo { width:100%; height:58px;}
+	.top-logo { width:100%; height:55px;}
 	.top-logo a { width:166px; height:80px; background:url(logo.jpg) no-repeat left -12px; background-size:160px 80px; margin-left:5px; margin:0 auto}
-	.top-menu{ margin-left: 0px;padding-top: 5px; width: 100%; text-align: center; background:#000000; overflow:auto; border: 1px solid #ff9700;}
+	.top-menu{ margin-left: 0px;padding-top: 0px; width: 100%; text-align: center; background:#000000; overflow:auto; border: 1px solid #ff9700;}
+	.login { margin-top:0px;}
 	.top-menu a {line-height:20px;padding:0;font-size:14px;/* color:#FFEAEA; */font-weight:bold;margin-left:0px;}
 	.top-menu #home{margin-right: 5px; text-indent: -9999px; background:url(home.png) ; background-repeat: no-repeat; height: 47px; width: 60px; }
 	.top-menu #article {margin-right: 15px; text-indent: -9999px; background:url(article.png); background-repeat: no-repeat; height: 47px; width: 60px;}
 	.top-menu #wallpapers {margin-right: 15px; text-indent: -9999px; background:url(wallpapers.png); background-repeat: no-repeat; height: 47px; width: 60px; }
 	.top-menu #allbrands {margin-right: 15px; text-indent: -9999px; background:url(allbrands.png); background-repeat: no-repeat; height: 47px; width: 60px; }
 	.top-menu .logos{width:41.66%}
-	.top-menu #logreg{float: right; background:url(login.png); height: 42px; width: 50px; background-repeat: no-repeat; text-indent: -9999px;}
+	.login{float: right; background:url(login.png); height: 42px; width: 50px; background-repeat: no-repeat; text-indent: -9999px;}
+	.signuplink{ width: 50px; height:45px;}
 	
 	.main{ width:auto; padding:0 8px}
 	.main-left{ width:100%; overflow:hidden}
@@ -161,4 +171,5 @@ a:hover{color: #ff9700;}
 	
 	.main-right{ width:100%}
 	.main-right .dropdown-content { position: absolute; width: 100% ; z-index: 1;}
+	.main-right2 { width:100%; float:right;}
 }

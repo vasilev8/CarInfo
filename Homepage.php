@@ -14,18 +14,17 @@
 <div class="top">
 	<div class="wrapper">
     	<div class="top-logo"><h1><a href="Homepage.html"></a></h1></div>
-    	<ul class="top-menu">
-            <li><a href="Homepage.html" class="active" id="home">Начало</a></li>
-			<li><a href="Articles.html" id="article">Статии</a></li>
-            <li><a href="All.html" id="allbrands">Всички марки</a></li>
-			<li><a href="Wallpapers.html" id="wallpapers">Wallpapers </a></li>
-		</ul>
-		<div class="login">
-			<form>
+    	<div class="top-menu">
+            <a href="Homepage.html" class="active" id="home">Начало</a>
+			<a href="Articles.html" id="article">Статии</a>
+            <a href="All.html" id="allbrands">Всички марки</a>
+			<a href="Wallpapers.html" id="wallpapers">Wallpapers </a>
+			<form class="login">
 				<input type="text" name="uid" placeholder="Username/E-mail">
 				<input type="password" name="pwd" placeholder="Password">
 				<button type="submit" name="submit">Login</button>
-				<a href="signup.php" class="reg">Sign up</a>
+				<button type="button" onclick="location.href='signup.php';" value="Sign up">Sign up</button>
+				<a href="signup.php" class="signuplink"></a>
 			</form>
 		</div>
     </div>
