@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +22,24 @@
 			<a href="Articles.html" id="article">Статии</a>
             <a href="All.html" id="allbrands">Всички марки</a>
 			<a href="Wallpapers.html" id="wallpapers">Wallpapers </a>
-			<form class="login" action="includes/signup.inc.php" method="POST">
-				<a href="signup.php"></a>
-				<input type="text" name="uid" placeholder="Username/E-mail">
-				<input type="password" name="pwd" placeholder="Password">
-				<button type="submit" name="submit">Login</button>
-				<button type="button" onclick="location.href='signup.php';" value="Sign up">Sign up</button>
-			</form>
+			
+			<?php
+				if (isset($_SESSION['u_id'])){
+					echo '<form class="login" action="includes/logout.inc.php" method="POST">
+						<button type="submit" name="submit">Logout</button>
+						</form>';
+				}
+				else {
+					echo '<form class="login" action="includes/login.inc.php" method="POST">
+						<a href="signup.php"></a>
+						<input type="text" name="uid" placeholder="Username/E-mail">
+						<input type="password" name="pwd" placeholder="Password">
+						<button type="submit" name="submit">Login</button>
+						<button type="button" onclick="location.href=signup.php;" value="Sign up">Sign up</button>
+						</form>';
+				}
+			?>
+	
 		</div>
     </div>
 </div>
@@ -36,7 +50,7 @@
 	
 		<div class="main-left">
 			<h2>Sign Up</h2>
-				<form class="register-form">
+				<form class="register-form" action="includes/signup2.inc.php" method="POST">
 					<input type="text" name="first" placeholder="First name">
 					<input type="text" name="last" placeholder="Last name">
 					<input type="text" name="email" placeholder="E-mail">
