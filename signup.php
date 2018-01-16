@@ -35,7 +35,7 @@
 						<input type="text" name="uid" placeholder="Username/E-mail">
 						<input type="password" name="pwd" placeholder="Password">
 						<button type="submit" name="submit">Login</button>
-						<button type="button" onclick="location.href=signup.php;" value="Sign up">Sign up</button>
+						<button type="button" onclick="location.href="signup.php";" value="Sign up">Sign up</button>
 						</form>';
 				}
 			?>
@@ -50,12 +50,12 @@
 	
 		<div class="main-left">
 			<h2>Sign Up</h2>
-				<form class="register-form" action="includes/signup2.inc.php" method="POST">
-					<input type="text" name="first" placeholder="First name">
-					<input type="text" name="last" placeholder="Last name">
-					<input type="text" name="email" placeholder="E-mail">
-					<input type="text" name="uid" placeholder="Username">
-					<input type="password" name="pwd" placeholder="Password">
+				<form class="register-form" action="includes/signup.inc.php" method="POST">
+					<input type="text" name="first" placeholder="First name" required>
+					<input type="text" name="last" placeholder="Last name" required>
+					<input type="text" name="email" placeholder="E-mail" required>
+					<input type="text" name="uid" placeholder="Username" required>
+					<input type="password" name="pwd" placeholder="Password" required>
 					<button type="submit" name="submit">Sign up</button>
 				</form>
 		</div>
