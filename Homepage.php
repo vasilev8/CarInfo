@@ -31,7 +31,7 @@
 				}
 				else {
 					echo '<form class="login" action="includes/login.inc.php" method="POST">
-						<a href="signup.php" style="width:50px; height:50px;"></a>
+						<a href="signup.php" class="signup" style="width:50px; height:50px; display:none"></a>
 						<input type="text" name="uid" placeholder="Username/E-mail">
 						<input type="password" name="pwd" placeholder="Password">
 						<button type="submit" name="submit">Login</button>

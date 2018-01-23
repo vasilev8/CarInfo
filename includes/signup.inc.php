@@ -15,6 +15,7 @@ if (isset($_POST['submit'])){
 			echo '<script language="javascript">';
 			echo 'alert("Some of the characters you entered are not valid")';
 			echo '</script>';
+			echo '<script>window.location.href = "../signup.php";</script>';
 			exit;
 		}else {
 			//check if email is vaild
@@ -22,6 +23,7 @@ if (isset($_POST['submit'])){
 				echo '<script language="javascript">';
 				echo 'Your e-mail is not valid!")';
 				echo '</script>';
+				echo '<script>window.location.href = "../signup.php";</script>';
 				exit;
 			//check if user is already taken
 			}else {
@@ -32,6 +34,7 @@ if (isset($_POST['submit'])){
 					echo '<script language="javascript">';
 					echo 'alert("Username already exist!")';
 					echo '</script>';
+					echo '<script>window.location.href = "../signup.php";</script>';
 					exit;
 				}else {
 					//Hashing the password
