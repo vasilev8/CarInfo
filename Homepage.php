@@ -25,7 +25,8 @@
 			
 			<?php
 				if (isset($_SESSION['u_id'])){
-					echo '<form class="login" action="includes/logout.inc.php" method="POST">
+					echo '<form class="logout" action="includes/logout.inc.php" method="POST">
+						<a href="signup.php" class="signup" style="width:50px; height:50px; display:none"></a>
 						<button type="submit" name="submit">Logout</button>
 						</form>';
 				}
