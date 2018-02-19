@@ -12,24 +12,33 @@ session_start();
 		//Error handlers
 		//Check if inputs are empty
 		if (empty($uid) || empty($pwd)){
-			header("Location: ..//Homepage.php?login=empty");
-			exit();
+			echo '<script language="javascript">';
+			echo 'alert("Please, fill all the inputs!")';
+			echo '</script>';
+			echo '<script>window.location.href = "../Homepage.php";</script>';
+			exit;
 		} 
 		else{
 			$sql = "SELECT * FROM users WHERE user_uid='$uid' OR user_email='$uid'";
 			$result = mysqli_query($conn, $sql);
 			$resultCheck = mysqli_num_rows($result);
 			if ($resultCheck < 1){
-				header("Location: ..//Homepage.php?login=error");
-				exit();
+				echo '<script language="javascript">';
+				echo 'alert("There is not user with such name!")';
+				echo '</script>';
+				echo '<script>window.location.href = "../Homepage.php";</script>';
+				exit;
 			}
 			else{
 				if($row = mysqli_fetch_assoc($result)){
 					//De-hashing the password
 					$hashedPwdCheck = password_verify($pwd, $row['user_pwd']);
 					if($hashedPwdCheck == false){
-						header("Location: ..//Homepage.php?login=error");
-						exit();
+						echo '<script language="javascript">';
+						echo 'alert("Incorrect password!")';
+						echo '</script>';
+						echo '<script>window.location.href = "../Homepage.php";</script>';
+						exit;
 					}
 					elseif($hashedPwdCheck == true){
 						//LOGIN THE USER HERE
@@ -38,16 +47,22 @@ session_start();
 						$_SESSION['u_last'] = $row['user_last'];
 						$_SESSION['u_email'] = $row['user_email'];
 						$_SESSION['u_uid'] = $row['user_uid'];
-						header("Location: ..//Homepage.php?login=success");
-						exit();
+						echo '<script language="javascript">';
+						echo 'alert("Login is successful!")';
+						echo '</script>';
+						echo '<script>window.location.href = "../Homepage.php";</script>';
+						exit;
 					}
 				}
 			}
 		}
 	}
 	else {
-		header("Location: ..//Homepage.php?login=error");
-		exit();
+		echo '<script language="javascript">';
+		echo 'alert("Error!")';
+		echo '</script>';
+		echo '<script>window.location.href = "../Homepage.php";</script>';
+		exit;
 	}
 
 ?>
