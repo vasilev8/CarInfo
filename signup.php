@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CarInfo</title>
+<title>Signup</title>
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="css/MyCSS.css">
@@ -16,12 +16,12 @@
 <!--Navigation-->
 <div class="top">
 	<div class="wrapper">
-    	<div class="top-logo"><h1><a href="Homepage.html"></a></h1></div>
+    	<div class="top-logo"><h1><a href="Homepage.php"></a></h1></div>
     	<div class="top-menu">
-            <a href="Homepage.html" class="active" id="home">Начало</a>
-			<a href="Articles.html" id="article">Статии</a>
-            <a href="All.html" id="allbrands">Всички марки</a>
-			<a href="Wallpapers.html" id="wallpapers">Wallpapers </a>
+            <a href="Homepage.php" class="active" id="home">Начало</a>
+			<a href="Articles.php" id="article">Статии</a>
+            <a href="All.php" id="allbrands">Всички марки</a>
+			<a href="Wallpapers.php" id="wallpapers">Wallpapers</a>
 			
 			<?php
 				if (isset($_SESSION['u_id'])){
@@ -60,7 +60,7 @@
 				</form>
 		</div>
 		
-		<div class="main-right2" style="border-left: 1px solid #ff9700">
+		<div class="main-right2">
 			<h2>Login</h2>
 				<?php
 				if (isset($_SESSION['u_id'])){
@@ -90,7 +90,8 @@
 		<a href="#"><i class="fa fa-youtube-square fa-3x"></i></a>
 	</div>
 	<div class="copyright">
-	©Copyrights <a href="Homepage.html">carinfo.bg</a> Всички права запазени.
+	©Copyrights <a href="Homepage.php">carinfo.bg</a>Всички права запазени.<br>
+	Всички снимки са собственост на техните респективни собственици.Ако откриете някоя снимка,която е ваша собственост, моля, свържете се с нас
 	</div>
 </footer>
 </body>

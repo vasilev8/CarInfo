@@ -1,4 +1,5 @@
 <?php
+	include_once 'includes/dbh.inc.php';
 	session_start();
 ?>
 <!DOCTYPE html>
@@ -16,15 +17,17 @@
 <!--Navigation-->
 <div class="top">
 	<div class="wrapper">
-    	<div class="top-logo"><h1><a href="Homepage.html"></a></h1></div>
+    	<div class="top-logo"><h1><a href="Homepage.php"></a></h1></div>
     	<div class="top-menu">
-            <a href="Homepage.html" class="active" id="home">Начало</a>
-			<a href="Articles.html" id="article">Статии</a>
-            <a href="All.html" id="allbrands">Всички марки</a>
-			<a href="Wallpapers.html" id="wallpapers">Wallpapers</a>
+            <a href="Homepage.php" class="active" id="home">Начало</a>
+			<a href="Articles.php" id="article">Статии</a>
+            <a href="All.php" id="allbrands">Всички марки</a>
+			<a href="Wallpapers.php" id="wallpapers">Wallpapers</a>
 			
 			<?php
 				if (isset($_SESSION['u_id'])){
+					echo '<a href="profile-page.php" id="profile-link">Профил</a>';
+					
 					echo '<form class="logout" action="includes/logout.inc.php" method="POST">
 						<a href="signup.php" class="signup" style="width:50px; height:50px; display:none"></a>
 						<button type="submit" name="submit">Logout</button>
@@ -32,11 +35,11 @@
 				}
 				else {
 					echo '<form class="login" action="includes/login.inc.php" method="POST">
-						<a href="signup.php" class="signup" style="width:50px; height:50px; display:none"></a>
+						<a href="signup.php" style="width:50px; height:50px; display:none"></a>
 						<input type="text" name="uid" placeholder="Username/E-mail">
 						<input type="password" name="pwd" placeholder="Password">
 						<button type="submit" name="submit">Login</button>
-						<a href="signup.php" style="width:9%; height: 30px; padding-top:9px; font-size: 13px; cursor: pointer; background-color: #FFF; color: black; float:right; line-height: 10px;">Sign up</a> 
+						<a href="signup.php" style="width: 50px; height: 50px; padding-top:9px; font-size: 13px; cursor: pointer; background-color: none; color: black; float:right; line-height: 10px;">Sign up</a> 
 						</form>';
 				}
 			?>
@@ -70,7 +73,8 @@
 			
 		<div class="w3-third w3-black w3-border-top w3-border-orange" style="height:auto;font-size:15px">
 			<h2><center>CarInfo</center></h2>
-			<p class="descript">CarInfo е български информативен сайт с история за всяка автомобилна и мотоциклетна компания.Сайтът включва също така статии и wallpapers за вашето устройство</p>
+			<p class="descript">Добре дошли в CarInfo - български информативен сайт с история за всяка автомобилна и мотоциклетна компания,
+			включващ също така статии и wallpapers за вашето устройство</p>
 		</div>		
 	</div>	
 </section>
@@ -78,19 +82,19 @@
 <section>
 	<div class="w3-row">
 		<div class="w3-third w3-border-top w3-border-bottom w3-border-right w3-border-orange">
-			<a href="article1.html" class="w3-btn w3-black w3-ripple" style="width:100%;">
+			<a href="article1.php" class="w3-btn w3-black w3-ripple" style="width:100%;">
 				<img src="img/article1.jpg" style="width:100%;"> 
 			<p>Спортният модел на Audi Q7</p>
 			</a>	
 		</div>
 		<div class="w3-third w3-border-top w3-border-bottom w3-border-right w3-border-orange">
-			<a href="article1.html" class="w3-btn w3-black w3-ripple" style="width:100%;">
+			<a href="article1.php" class="w3-btn w3-black w3-ripple" style="width:100%;">
 				<img src="img/article2.jpg" style="width:100%;"> 
 				<p>Легендата - Чочоне</p>
 			</a>	
 		</div>
 		<div class="w3-third w3-border-top w3-border-bottom w3-border-right w3-border-orange">
-			<a href="article3.html" class="w3-btn w3-black w3-ripple" style="width:100%;">
+			<a href="articles/VW-Golf.php" class="w3-btn w3-black w3-ripple" style="width:100%;">
 				<img src="img/article3.jpg" style="width:100%;"> 
 				<p>Еволюцията на VW-Golf</p>
 			</a>	
@@ -105,7 +109,8 @@
 		<a href="#"><i class="fa fa-youtube-square fa-3x"></i></a>
 	</div>
 	<div class="copyright">
-	©Copyrights <a href="Homepage.html">carinfo.bg</a> Всички права запазени.
+	©Copyrights <a href="Homepage.php">carinfo.bg</a>Всички права запазени.<br>
+	Всички снимки са собственост на техните респективни собственици.Ако откриете някоя снимка,която е ваша собственост, моля, свържете се с нас
 	</div>
 </footer>
 <script>
