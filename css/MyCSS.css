@@ -23,10 +23,11 @@ a:hover{ color:#ff9700; text-decoration:none;}
 .top-logo a{ width:166px; height:75px; background:url(logo.jpg) no-repeat left top; display:block; background-size:166px 80px}
 .top-menu{ padding-top:24px;margin-left:85px; height:auto;}
 .top-menu .home{ width:120px}
-.top-menu a{float:left;display:block;line-height:56px;padding:0 15px;text-align:center;font-size:17px;color:#FFF;font-weight:bold;}
+.top-menu a{float:left; display:block; line-height: 56px; padding: 0 15px; text-align: center; font-size: 17px; color: #FFF; font-weight: bold; }
 .top-menu a:hover{ background-color: #ff9700; color: black;}
 .top-menu a.active{background-color: #ff9700; color: black;}
-.login { margin-top:10px; margin-left: px}
+.login { margin-top:10px; height: 70px}
+.login a {width: 90px; height: 30px; padding-top:9px; font-size: 13px; cursor: pointer; background-color: #FFF; color: black; float:right; line-height: 10px;}
 .login input {width: 12%; margin-left: 1px; height: 30px; margin-bottom:5px; border: none ; background-color: #FFF; font-size: 12px; color: black; line-height: 10px;}
 .login button { width:8%; height: 30px; border: none; font-size: 13px; font-weight: bold; margin: 0 auto; cursor: pointer; background-color: #FFF; }
 .login button:hover{ background-color:#ff9700; color:black }
@@ -166,7 +167,8 @@ a:hover{ color:#ff9700; text-decoration:none;}
 	.top-menu #allbrands {margin-right: 10px; text-indent: -9999px; background:url(rsz_allbrands.png); background-repeat: no-repeat; height: 47px; width: 45px; }
 	.top-menu #profile-link {margin-right: 10px; text-indent: -9999px; background:url(rsz_profile1.png); background-repeat: no-repeat; height: 47px; width: 45px;}
 	.top-menu .logos{width:41.66%}
-	.login{float: right; background:url(login.png); margin-top:0px; height: 42px; width: 50px; background-repeat: no-repeat; text-indent: -9999px;}
+	.login {float: right; background:url(login.png); margin-top:0px; height: 42px; width: 50px; background-repeat: no-repeat; text-indent: -9999px;}
+	.login a{float: right; background:url(login.png); margin-top:0px; height: 42px; width: 50px; background-repeat: no-repeat; text-indent: -9999px;}
 	.logout{float: right; background:url(logout.png); margin-top:2px; height: 45px; width: 64px; background-repeat: no-repeat; text-indent: -9999px;}
 	.logout button{	float: right; background:url(logout.png); margin-top:2px; height: 45px; width: 64px; background-repeat: no-repeat; text-indent: -9999px; border:none}
 	

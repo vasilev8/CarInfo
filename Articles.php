@@ -35,11 +35,10 @@
 				}
 				else {
 					echo '<form class="login" action="includes/login.inc.php" method="POST">
-						<a href="signup.php" class="signup" style="width:50px; height:50px; display:none"></a>
 						<input type="text" name="uid" placeholder="Username/E-mail">
 						<input type="password" name="pwd" placeholder="Password">
 						<button type="submit" name="submit">Login</button>
-						<a href="signup.php" style="width:9%; height: 30px; padding-top:9px; font-size: 13px; cursor: pointer; background-color: #FFF; color: black; float:right; line-height: 10px;">Sign up</a> 
+						<a href="signup.php">Sign up</a> 
 						</form>';
 				}
 			?>

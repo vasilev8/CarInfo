@@ -25,17 +25,19 @@
 			
 			<?php
 				if (isset($_SESSION['u_id'])){
-					echo '<form class="login" action="includes/logout.inc.php" method="POST">
+					echo '<a href="profile-page.php" id="profile-link">Профил</a>';
+					
+					echo '<form class="logout" action="includes/logout.inc.php" method="POST">
+						<a href="signup.php" class="signup" style="width:50px; height:50px; display:none"></a>
 						<button type="submit" name="submit">Logout</button>
 						</form>';
 				}
 				else {
 					echo '<form class="login" action="includes/login.inc.php" method="POST">
-						<a href="signup.php"></a>
 						<input type="text" name="uid" placeholder="Username/E-mail">
 						<input type="password" name="pwd" placeholder="Password">
 						<button type="submit" name="submit">Login</button>
-						<button type="button" onclick="location.href="signup.php";" value="Sign up">Sign up</button>
+						<a href="signup.php">Sign up</a> 
 						</form>';
 				}
 			?>
