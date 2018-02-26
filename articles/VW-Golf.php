@@ -30,13 +30,13 @@
 				if (isset($_SESSION['u_id'])){
 					echo '<a href="profile-page.php" id="profile-link">Профил</a>';
 					
-					echo '<form class="logout" action="includes/logout.inc.php" method="POST">
+					echo '<form class="logout" action="../includes/logout.inc.php" method="POST">
 						<a href="signup.php" class="signup" style="width:50px; height:50px; display:none"></a>
 						<button type="submit" name="submit">Logout</button>
 						</form>';
 				}
 				else {
-					echo '<form class="login" action="includes/login.inc.php" method="POST">
+					echo '<form class="login" action="../includes/login.inc.php" method="POST">
 						<input type="text" name="uid" placeholder="Username/E-mail">
 						<input type="password" name="pwd" placeholder="Password">
 						<button type="submit" name="submit">Login</button>
@@ -147,16 +147,16 @@
 		
        <div class="t3">Топ 10 Мотоциклетни компании</div>
         <dl class="box1">
-        	<dt><span class="s01">1.</span><a href="#"><img class="image1" src="img/yamaham.jpg">Yamaha</a></dt>
-        	<dt><span class="s01">2.</span><a href="#"><img class="image1" src="img/hondam.jpg">Honda</a></dt>
-        	<dt><span class="s01">3.</span><a href="#"><img class="image1" src="img/ducatim.jpg">Ducati</a></dt>
-        	<dt><span class="s01">4.</span><a href="#"><img class="image1" src="img/kawasakim.jpg">Kawasaki</a></dt>
-        	<dt><span class="s01">5.</span><a href="#"><img class="image1" src="img/suzukim.jpg">Suzuki</a></dt>
-        	<dt><span class="s01">6.</span><a href="#"><img class="image1" src="img/harleym.jpg">Harley-Davidson</a></dt>
-        	<dt><span class="s01">7.</span><a href="#"><img class="image1" src="img/bmwm.jpg">BMW</a></dt>
-        	<dt><span class="s01">8.</span><a href="#"><img class="image1" src="img/triumphm.jpg">Triumph</a></dt>
-        	<dt><span class="s01">9.</span><a href="#"><img class="image1" src="img/apriliam.jpg">Aprilia</a></dt>
-        	<dt><span class="s01">10.</span><a href="#"><img class="image1" src="img/mvm.jpg">MV Agusta</a></dt>
+        	<dt><span class="s01">1.</span><a href="#"><img class="image1" src="../img/yamaham.jpg">Yamaha</a></dt>
+        	<dt><span class="s01">2.</span><a href="#"><img class="image1" src="../img/hondam.jpg">Honda</a></dt>
+        	<dt><span class="s01">3.</span><a href="#"><img class="image1" src="../img/ducatim.jpg">Ducati</a></dt>
+        	<dt><span class="s01">4.</span><a href="#"><img class="image1" src="../img/kawasakim.jpg">Kawasaki</a></dt>
+        	<dt><span class="s01">5.</span><a href="#"><img class="image1" src="../img/suzukim.jpg">Suzuki</a></dt>
+        	<dt><span class="s01">6.</span><a href="#"><img class="image1" src="../img/harleym.jpg">Harley-Davidson</a></dt>
+        	<dt><span class="s01">7.</span><a href="#"><img class="image1" src="../img/bmwm.jpg">BMW</a></dt>
+        	<dt><span class="s01">8.</span><a href="#"><img class="image1" src="../img/triumphm.jpg">Triumph</a></dt>
+        	<dt><span class="s01">9.</span><a href="#"><img class="image1" src="../img/apriliam.jpg">Aprilia</a></dt>
+        	<dt><span class="s01">10.</span><a href="#"><img class="image1" src="../img/mvm.jpg">MV Agusta</a></dt>
         </dl>
 	</div>
 

@@ -81,6 +81,12 @@
 <section>
 	<div class="w3-row">
 		<div class="w3-third w3-border-top w3-border-bottom w3-border-right w3-border-orange">
+			<a href="articles/VW-Golf.php" class="w3-btn w3-black w3-ripple" style="width:100%;">
+				<img src="img/article3.jpg" style="width:100%;"> 
+				<p>Еволюцията на VW-Golf</p>
+			</a>	
+		</div>
+		<div class="w3-third w3-border-top w3-border-bottom w3-border-right w3-border-orange">
 			<a href="article1.php" class="w3-btn w3-black w3-ripple" style="width:100%;">
 				<img src="img/article1.jpg" style="width:100%;"> 
 			<p>Спортният модел на Audi Q7</p>
@@ -90,12 +96,6 @@
 			<a href="article1.php" class="w3-btn w3-black w3-ripple" style="width:100%;">
 				<img src="img/article2.jpg" style="width:100%;"> 
 				<p>Легендата - Чочоне</p>
-			</a>	
-		</div>
-		<div class="w3-third w3-border-top w3-border-bottom w3-border-right w3-border-orange">
-			<a href="articles/VW-Golf.php" class="w3-btn w3-black w3-ripple" style="width:100%;">
-				<img src="img/article3.jpg" style="width:100%;"> 
-				<p>Еволюцията на VW-Golf</p>
 			</a>	
 		</div>
 	</div>

@@ -57,6 +57,7 @@
             <dt>Категория :</dt>
             <dd><a href="All.php">Всички</a></dd>
             <dd><a href="Popular.php">Известни</a></dd>
+			<dd><a href="Motorcycles.php">Мотоциклети</a></dd>
             <dd><a href="GER-brands.php">GER</a></dd>
             <dd><a href="USA-brands.php">USA</a></dd>
             <dd><a href="UK-brands.php">UK</a></dd>
