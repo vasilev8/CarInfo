@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Motorcycle-brands</title>
+<title>Audi</title>
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="css/MyCSS.css">
@@ -52,8 +52,7 @@
 <div class="main">
 
 	<div class="main-left">
-	
-        <dl class="tnav">
+		<dl class="tnav" style="border-bottom:2px solid #ff9700">
             <dt>Категория :</dt>
             <dd><a href="All.php">Всички</a></dd>
             <dd><a href="Popular.php">Известни</a></dd>
@@ -67,37 +66,48 @@
             <dd><a href="Other.php">Други</a></dd>
         </dl>
 		
-        <dl class="logobox">
 		<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox" style="margin-top: 5px;"></div>
-			<dt><a href="#"><img src="img/Yamaha-logo.jpeg" alt="Yamaha logo"></a>
-			<a href="#" title="Yamaha">Yamaha</a></dt>
-			<dt><a href="#"><img src="img/Honda-Log.jpg" alt="Honda logo"></a>
-			<a href="#" title="Honda">Honda</a></dt>
-			<dt><a href="#"><img src="img/BMW-logo.jpg" alt="BMW-Motorrad logo"></a>
-			<a href="#" title="BMW-Motorrad">BMW-Motorrad</a></dt>
-			<dt><a href="#"><img src="img/MV-Augusta-logo.jpg" alt="MV-Augusta logo"></a>
-			<a href="#" title="MV-Augusta">MV-Augusta</a></dt>
-			<dt><a href="#"><img src="img/Suzuki-logo.jpg" alt="Suzuki logo"></a>
-			<a href="#" title="Suzuki">Suzuki</a></dt>
-			<dt><a href="#"><img src="img/Harley-Davidson-logo.jpg" alt="Harley-Davidson logo"></a>
-			<a href="#" title="Harley-Davidson">Harley-Davidson</a></dt>
-			<dt><a href="#"><img src="img/Ducati-logo.jpg" alt="Ducati logo"></a>
-			<a href="" title="Ducati">Ducati</a></dt>
-			<dt><a href="#"><img src="img/Kawasaki-logo.png" alt="Kawasaki logo"></a>
-			<a href="#" title="Kawasaki">Kawasaki</a></dt>
-			<dt><a href="#"><img src="img/Aprilia-logo.png" alt="Aprilia logo"></a>
-			<a href="#" title="Aprilia">Aprilia</a></dt>
-			<dt><a href="#"><img src="img/Triumph-logo.jpg" alt="Triumph logo"></a>
-			<a href="#" title="Triumph">Triumph</a></dt>
-			
-		</dl>
 		
-		<div class="pagination">
-		  <a href="Popular.php">&laquo;</a>
-		  <a href="Popular.php" class="active">1</a>
-		  <a href="Popular.php">&raquo;</a>
+		<div class="article-box">
+			<h2>Audi</h2>
+			<img src="img/audil.jpg" style="height: 300px; float: center">
+			Audi е емблематичен немски производител на луксозни автомобили, изцяло притежаван и спомагащ Volkswagen Group.
+			Центърът на компанията се намира в град Ingolstadt, област Bavaria, Германия. Част е от Volkswagen Group от 1964 г., като марката винаги е била символ на качество, сигурност, комфорт и здравина.
+			Мотото на фирмата е "Vorsprung durch Technik"
+			което означава "Прогрес чрез Технологии". 
+			<br>
+			<br>
+			<b>Логото</b>
+			<br>
+			Четирите преплетени кръга олицетворяват обединението на четири фирми: Audi, DKW, Horch и Wanderer, които през далечната 1932 формират Auto Union.
+			<img src="img/audill.jpg" style="height: 300px;">
+			<br>
+			<br>
+			<b>Интересни факти</b>
+			<br>
+			<b>1. Ауди идва от латинската дума за „слушам“.</b>
+			<br>
+			Аугуст Хорш основал своята компания „A. Horch & Cie“ през 1899 година, но само 10 години 
+			по-късно заради неразбирателство с изпълнителния директор той я напуснал и създал „August
+			Horch Automobilwerke GmbH“. За негово съжаление нямал право да ползва „Horch“ заради запазена
+			търговска марка, но това не сломило Аугуст… и тъй като Horch значи ‘слушам’ той решил да използва еквивалента на латински „Audi“.
+			<br>
+			<b>2. Ауди провеждат първите краш тестове.</b>
+			<br>
+			Няма как да сме сигурни, но Ауди твърдят именно това. Естествено, този тип тестове далеч не са това, което са днес, но от четирите ринга твърдят, че провеждат такъв тип занятия още от 40-те години на миналия век.
+			<br>
+			<b>3. 431 км/ч през 1938?</b>
+			<br>
+			Враждата между Auto Union и Mercedes-Benz датира още преди Втората световна война.
+			Спонсорирана от Адолф Хитлер на бял свят се появява „Auto Union Type C“ с 16 цилиндров двигател 
+			и 560 конски сили. Невероятната скорост от 431 километра в час била постигната на един от немските аутобани,
+			а не на специална писта. Едва 0.7 км/ч не достигнали на Audi да подобрят рекорда на Mercedes.
+			<img src="img/audilll.jpg" style="height: 300px;">
+			<br>
+			<br>
+			<b>Всички модели</b>
+			<img src="img/audillll.jpg" style="height: 600px;">
 		</div>
-	
 	</div>
 
 	<div class="main-right">

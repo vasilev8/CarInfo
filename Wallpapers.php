@@ -76,10 +76,16 @@
 	<div class="main-left">
 		<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox" style="margin-top: 5px;"></div>
 		<ul class="wallpapers">
-			<li><a href="http://<li><a href="#"><img src="https://auto.ndtvimg.com/car-images/medium/hyundai/verna/hyundai-verna.jpg?v=18" alt="HD wallpaper"><figcaption>First image</figcaption></a></li>
-			<li><a href="http://<li><a href="#"><img src="https://auto.ndtvimg.com/car-images/medium/hyundai/verna/hyundai-verna.jpg?v=18" alt="HD wallpaper"><figcaption>First image</figcaption></a></li>
-			<li><a href="http://<li><a href="#"><img src="https://auto.ndtvimg.com/car-images/medium/hyundai/verna/hyundai-verna.jpg?v=18" alt="HD wallpaper"><figcaption>First image</figcaption></a></li>
-			<li><a href="http://<li><a href="#"><img src="https://auto.ndtvimg.com/car-images/medium/hyundai/verna/hyundai-verna.jpg?v=18" alt="HD wallpaper"><figcaption>First image</figcaption></a></li>
+			<li><img class="myImgW" src="wallpapers/car1.jpg" alt="HD wallpaper, car"><figcaption>Concept car</figcaption></li>
+			<li><img class="myImgW" src="wallpapers/car2.jpg" alt="HD wallpaper, Audi, car"><figcaption>Audi A3 8p</figcaption></li>
+			<li><img class="myImgW" src="wallpapers/car3.jpg" alt="HD wallpaper , BMW"><figcaption>BMW</figcaption></li>
+			<li><img class="myImgW" src="wallpapers/car4.jpg" alt="HD wallpaper, Mustang, Ford, muscle car"><figcaption>Ford Mustang</figcaption></li>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
 		</ul>
 		
 		<div class="pagination">
@@ -114,6 +120,35 @@ window.onclick = function(event) {
     }
   }
 }
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal
+var images = document.getElementsByClassName("myImgW");
+	for(var i = 0; i < images.length; i++) {
+		images[i].onclick = showCaption;
+	}
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+function showCaption(){
+	modal.style.display = "block";
+	modalImg.src = this.src;
+	captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+		modal.style.display = "none";
+	}
+	modal.onclick = function() {
+		modal.style.display = "none";
+		}
 </script>
 	<!-- Footer -->
 <footer class="w3-border-top w3-border-orange" style="margin-top:5px">
