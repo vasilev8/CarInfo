@@ -67,6 +67,8 @@ a:hover{ color:#ff9700; text-decoration:none;}
 .main-left .articles {width: 840px; overflow:hidden; border:1px solid #ff9700; position: relative;height:auto;margin-top:10px;}
 .main-left #myImg {position:relative;border-radius: 5px;height: 230px; width:410px;margin-top:5px;margin-bottom:5px; margin-left:-20px; border-radius:5px;padding-left:40px;}
 #myImg:hover {opacity: 0.3;transition:opacity 0.8s}
+.main-left .myImgW {cursor: pointer; width:250px; height:auto; z-index:-1;transition: transform 0.2s; -webkit-transition: -webkit-transform 0.2s; -moz-transition: -moz-transform 0.2s; -o-transition: -o-transform 0.2s;}
+myImgW:hover {transform: scale(1.1); -ms-transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1);}
 .main-left .article-info {float: right; width: 420px; padding-top: 20px;}
 .main-left .article-title { font-weight: bold; font-size: 14px; color: #FFF; font-family: "Arial"; text-decoration: none; display: block;}
 .main-left .article-title:hover {color: #ff9700;}
@@ -80,9 +82,36 @@ a:hover{ color:#ff9700; text-decoration:none;}
 .main-left .article-description {font-size: 12px; color: #4d4d4d; font-family: "Arial"; padding-bottom: 5px;overflow:hidden;padding-right:10px;}
 .main-left .clear { border-radius: 2px; border-top: 1px groove #ff9700;padding-bottom:10px;padding-top:10px;width:800px;margin-left:20px;}
 .main-left .wallpapers{ width:100%; overflow:hidden; list-style-type: none; margin-top: 20px; padding: 0;}
+.main-left .wallpapers .modal { display: none; position: fixed; z-index: 1; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.9); }
+.main-left .wallpapers .modal-content { margin: auto; display: block; width: 80%; max-width: 700px;}
+#caption { margin: auto; display: block; width: 80%; max-width: 700px; text-align: center; color: #ccc; padding: 10px 0; height: 150px;}
+/* Add Animation */
+.main-left .wallpapers.modal-content, #caption { -webkit-animation-name: zoom; -webkit-animation-duration: 0.6s; animation-name: zoom; animation-duration: 0.6s; }
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.main-left .wallpapers .modal .close {position: absolute;top: 35px;right: 35px;color: #ff9700; font-size: 80px;font-weight: bold;transition: 0.3s;}
+.main-left .wallpapers .modal .close:hover,
+.main-left .wallpapers .modal .close:focus {color: #bbb;text-decoration: none;cursor: pointer;}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
 .main-left .wallpapers li { text-align:center; line-height:40px; overflow:auto; display:inline-block; padding:5px;}
+.main-left .wallpapers li figcaption {color: #fff}
 .main-left .wallpapers li img { width:250px; height:auto; z-index:-1;transition: transform 0.2s; -webkit-transition: -webkit-transform 0.2s; -moz-transition: -moz-transform 0.2s; -o-transition: -o-transform 0.2s;}
-.main-left .wallpapers li img:hover { transform: scale(1.1); -ms-transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1);}
 .main-left .wallpapers li span { float:left; display:inline-block; width:auto; text-align:center; z-index:9999; margin-top:-35px; background-color: rgba(0,0,0,0.4); font-size:16px; font-weight:bold}
 .main-left .wallpapers li a { color:#BBB}
 .main-left .wallpapers li a:hover { color:#ff9700}
@@ -123,6 +152,7 @@ a:hover{ color:#ff9700; text-decoration:none;}
 .main-left .delete-form button { width: 60px; height: 30px; border: none; background-color: #282828; color: #FFF; cursor: pointer; opacity: 0.7;}
 .main-left .delete-form button:hover { opacity: 1; }
 .main-left #warning { color: #ff9700 }
+.main-left .title { color: #ff9700; text-align: center;}
 
 /*Main content-right*/
 .main-right{ width:225px; float:right;}
